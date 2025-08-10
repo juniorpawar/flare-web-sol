@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flare web solution</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="text-white h-full min-h-screen max-w-screen">
+    <!-- background images of blocks -->
+    <!-- <div id="bg" class="min-h-screen w-screen absolute z-0"></div> -->
+    <!-- Overlay for the landing page content -->
+
+    <!-- Navbar Container -->
+    <nav class="mt-2 w-screen z-10 absolute flex items-center justify-center">
+        <div class="flex items-center justify-between h-14 md:h-20 py-3 sm:px-1 lg:px-8 container">
+
+            <!-- Logo and Brand -->
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="logo" class="h-14 md:h-20">
+                <span class="text-xl md:text-2xl hidden sm:block font-bold text-gray-400">Flare Web Solutions</span>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        About
+                    </a>
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Services
+                    </a>
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="-mr-2 flex md:hidden">
+                <button id="mobile-menu-button" type="button"
+                    class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Hamburger icon -->
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Close menu icon -->
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu dropdown -->
+        <div class="md:hidden bg-gray-500 text-right" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
+                    Home
+                </a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
+                    About
+                </a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
+                    Services
+                </a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="flex flex-row items-center w-screen">
+        <div
+            class="absolute top-[10%] lg:top-[22%] inset-0 z-10 h-screen lg:max-w-4xl mx-14 p-8 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:p-12">
+
+            <!-- Heading -->
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold font-archivo text-white sharp-shadow-head">
+                &lt; FLARE🔥/&gt;
+            </h1>
+
+            <!-- Subheading -->
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-[3rem] font-bold font-bungee sharp-shadow-sub-head">
+                WEB SOLUTIONS
+            </h2>
+
+            <!-- CODE Paragraph -->
+            <p
+                class="font-mono text-[10px] sm:text-base text-left text-gray-400  bg-[#0A0145] p-3 rounded-lg leading-snug">
+                <span class="text-[#c679e3]">while</span>
+                <span class="text-[#e06c75]">(</span>
+                <span class="text-[#e5c07b]">!impact</span>
+                <span class="text-[#e06c75]">){</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-[#61afef]">design()</span>
+                ;
+                <span class="text-[#61afef]">develop()</span>
+                ;
+                <span class="text-[#61afef]">deploy()</span>
+                ;
+                <br>
+                <span class="text-[#e06c75]">}</span>
+            </p>
+
+            <!-- Button container -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <!-- Primary button -->
+                <button
+                    class="w-full sm:w-auto px-5 py-2 bg-purple-600 hover:bg-purple-900 transition-all text-white font-medium font-mono rounded-lg shadow-lg">
+                    &lt;Get started/&gt;
+                </button>
+
+                <!-- Secondary button -->
+                <button
+                    class="w-full sm:w-auto px-5 py-2 border-2 hover:bg-gray-900 transition-all text-white font-mono rounded-lg shadow-lg">
+                    &lt;contact us/&gt;
+                </button>
+            </div>
+
+        </div>
+        <div id="scene-container" class="w-fit h-fit flex items-center justify-center"></div>
+    </div>
+
+    <!-- about section -->
+    <section class="text-white py-16 px-10 md:px-20">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
+
+            <!-- Image -->
+            <div class="flex-1">
+                <img src="./images/about-img.png" alt="Our Team" class="">
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                    At <span class="text-yellow-400 font-semibold">&lt; FLARE web solutions🔥/&gt;</span>, we create
+                    stunning, high-performance websites and applications that help businesses stand out
+                    in the digital world. Our mission is simple — blend creative design with cutting-edge
+                    technology to deliver exceptional results.
+                </p>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    From startups to established enterprises, our team works closely with clients to
+                    understand their goals and craft tailored solutions. We specialize in responsive
+                    design, fast loading speeds, and user-friendly experiences.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-yellow-400">50+</h3>
+                        <p class="text-gray-400">Projects Delivered</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-yellow-400">20+</h3>
+                        <p class="text-gray-400">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SCRIPTS -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+            }
+        }
+    </script>
+    <!-- Include the main Three.js library from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Include the GLTFLoader for loading glTF models -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- Include the RGBELoader for loading .hdr files -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+    <!-- Include the PMREMGenerator for converting HDRIs into environment maps -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/pmrem/PMREMGenerator.js"></script>
+    <!-- orbit controls -->
+    <!-- <script src="https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <!-- js file -->
+    <script type="module" src="./js/script.js"></script>
+    <!-- navbar toggle -->
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

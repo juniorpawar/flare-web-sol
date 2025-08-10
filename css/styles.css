@@ -1,0 +1,70 @@
+html{
+    height: auto;
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+    background-color: #090128;
+    cursor: default;
+    overflow-x: hidden;
+    caret-color: transparent;
+}
+
+#bg {
+    background-image: url("../images/full-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+#about {
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  #bg {
+    background-image: url('../images/small-bg.png');
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+.big-canvas {
+    position: relative;
+    top: 0px;
+    left: 25%;
+}
+
+canvas {
+    position: relative;
+    top: 200px;
+    z-index: 10;
+}
+
+.font-archivo {
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+}
+
+.font-bungee {
+    font-family: 'Bungee', sans-serif;
+}
+
+.font-jetBrainsMono {
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.sharp-shadow-head {
+    text-shadow: 5px 5px 0 #727272;
+    color: #fff;
+}
+
+.sharp-shadow-sub-head {
+    text-shadow: 4px 4px 0 #7843e6;
+    color: #0bbfd6;
+}
