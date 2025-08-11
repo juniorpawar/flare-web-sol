@@ -141,7 +141,7 @@ const responsiveLayout = () => {
         canvas.classList.add("big-canvas")
     }
     else {
-        camera.position.z = 3;
+        camera.position.z = 4;
         canvas.classList.add("big-canvas")
     }
 

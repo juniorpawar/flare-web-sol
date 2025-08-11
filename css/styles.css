@@ -1,4 +1,4 @@
-html{
+html {
     height: auto;
     width: 100%;
 }
@@ -13,25 +13,18 @@ body {
 }
 
 #bg {
-    background-image: url("../images/full-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-}
-
-#about {
-    background-image: url("../images/bg2.png");
+    background-image: url("../images/stars.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {
-  #bg {
-    background-image: url('../images/small-bg.png');
-    background-size: cover;
-    background-position: top;
-  }
+    #bg {
+        background-image: url('../images/stars.jpg');
+        background-size: cover;
+        background-position: top;
+    }
 }
 
 .big-canvas {
@@ -68,3 +61,40 @@ canvas {
     text-shadow: 4px 4px 0 #7843e6;
     color: #0bbfd6;
 }
+
+/* word slider start */
+.typing-container {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adjust as needed */
+}
+
+.typing-text {
+    overflow: hidden;
+    /* Ensures the text is hidden before typing */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    border-right: 2px solid transparent;
+    /* Placeholder for the cursor */
+}
+
+.typing-cursor {
+    font-size: 2rem;
+    color: #333;
+    animation: blink 1s step-end infinite;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* word slider end */
