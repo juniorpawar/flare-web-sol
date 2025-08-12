@@ -144,8 +144,8 @@ canvas {
     justify-content: flex-start;
     gap: var(--slide-gap);
     width: calc((var(--slide-width) + var(--slide-gap)) * 6);
+        animation: moveLeft 25s linear infinite;
 
-    animation: moveLeft 25s linear infinite;
 }
 
 @keyframes moveLeft {
@@ -159,3 +159,24 @@ canvas {
 }
 
 /* technologies scrollbar end */
+
+/* why choose us layers start */
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(20deg, #006eff, #0d003d);
+    /* background:url("../images/layer.jpg") ; */
+    opacity: 30%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    /* Keep the transition for a smooth animation */
+}
+
+/* why choose us layers end */
