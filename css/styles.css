@@ -1,8 +1,11 @@
+* {
+    scrollbar-width: none;
+}
+
 html {
     height: auto;
     width: 100%;
 }
-
 
 body {
     margin: 0;
@@ -98,3 +101,61 @@ canvas {
 }
 
 /* word slider end */
+
+/* technologies scrollbar start */
+@property --background-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #090128;
+}
+
+.scroller-container {
+    --slide-width: clamp(150px, 20vw, 300px);
+    --slide-gap: calc(var(--slide-width) * 0.06);
+    --slide-border-radius: calc(var(--slide-width) * 0.06);
+
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: var(--slide-width);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: var(--slide-width);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.scroller-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--slide-gap);
+    width: calc((var(--slide-width) + var(--slide-gap)) * 6);
+
+    animation: moveLeft 25s linear infinite;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translatex(0);
+    }
+
+    to {
+        transform: translatex(-100%);
+    }
+}
+
+/* technologies scrollbar end */
