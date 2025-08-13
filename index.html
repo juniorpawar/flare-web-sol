@@ -4,18 +4,19 @@
 <head>
     <title>Flare web solution</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 
 <body class="text-white h-full min-h-screen max-w-screen">
     <!-- background images of stars -->
     <div id="bg" class="min-h-screen w-screen absolute z-0"></div>
+
     <!-- Overlay for the landing page content -->
 
     <!-- Navbar Container -->
@@ -23,21 +24,20 @@
         <div class="bg-white/10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-2 rounded-lg">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <a href="#">
+                    <a href="/">
                         <img class="h-14 md:h-20 w-14 md:w-20" src="./images/logo.png" alt="Your Brand Logo">
                     </a>
                 </div>
 
-
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#"
+                        <a href="/"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="#"
+                        <a href="./about.html"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#"
+                        <a href="./services.html"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                        <a href="#"
+                        <a href="./contact.html"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
@@ -46,7 +46,6 @@
                     <button type="button" id="mobile-menu-button"
                         class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                         aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -64,19 +63,17 @@
 
         <div class="md:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <span class="hover:bg-gray-700 block">
+                <span class="hover:bg-gray-700 rounded-lg block">
                     <a href="/" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
                 </span>
-                <span class="hover:bg-gray-700 block">
-                    <a href="./services"
-                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./services.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Services</a>
                 </span>
-                <span class="hover:bg-gray-700 block">
-                    <a href="./about" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./about.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
                 </span>
-                <span class="hover:bg-gray-700 block">
-                    <a href="./contact"
-                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./contact.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </span>
             </div>
         </div>
@@ -84,9 +81,7 @@
 
     <!-- hero section -->
     <div class="flex flex-row items-center w-screen">
-        <div
-            class="absolute top-[10%] lg:top-[22%] inset-0 z-9 h-screen lg:max-w-4xl md:mx-14 p-8 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:p-12">
-
+        <div class="absolute top-[10%] lg:top-[22%] inset-0 z-0 h-screen lg:max-w-4xl md:mx-14 p-8 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:p-12">
             <!-- Heading -->
             <h1
                 class="text-2xl sm:text-5xl md:text-6xl lg:text-8xl font-bold font-archivo text-white sharp-shadow-head">
@@ -137,7 +132,7 @@
     </div>
 
     <!-- about section -->
-    <section class="text-white py-16 px-10 md:px-20">
+    <section id="about" class="text-white py-16 px-10 md:px-20">
         <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
 
             <!-- Image -->
@@ -177,7 +172,7 @@
     </section>
 
     <!-- Services section -->
-    <section class="py-16 bg-[#090128] text-white">
+    <section id="services" class="py-16 bg-[#090128] text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="text-center mb-12">
@@ -410,7 +405,7 @@
     </div>
 
     <!-- why choose us section -->
-    <div class="w-screen bg-black/10 flex flex-col gap-6 items-center py-10">
+    <div id="why-choose-us" class="w-screen bg-black/10 flex flex-col gap-6 items-center py-10">
         <div class="text-center">
             <h2 class="text-3xl font-extrabold font-bungee sharp-shadow-head text-yellow-400 sm:text-4xl">
                 &lt; Why Choose Us /&gt;
@@ -467,7 +462,7 @@
     </div>
 
     <!-- testimonials -->
-    <section class="bg-gray-900 text-gray-100 py-20 px-4 md:px-8">
+    <section id="testimonials" class="bg-gray-900 text-gray-100 py-20 px-4 md:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="mb-12">
                 <h2 class="text-3xl font-bungee sharp-shadow-head font-bold text-yellow-400">
@@ -530,7 +525,7 @@
     </section>
 
     <!-- contact form -->
-    <section class="text-gray-100 py-20 px-4 md:px-8">
+    <section id="contact" class="text-gray-100 py-20 px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold font-bungee sharp-shadow-sub-head text-white mb-4">
@@ -600,11 +595,11 @@
             <div>
                 <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-sky-400 transition-colors">Home</a></li>
-                    <li><a href="#" class="hover:text-sky-400 transition-colors">About Us</a></li>
-                    <li><a href="#" class="hover:text-sky-400 transition-colors">Services</a></li>
-                    <li><a href="#" class="hover:text-sky-400 transition-colors">Testimonials</a></li>
-                    <li><a href="#" class="hover:text-sky-400 transition-colors">Contact</a></li>
+                    <li><a href="/" class="hover:text-sky-400 transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-sky-400 transition-colors">About Us</a></li>
+                    <li><a href="#services" class="hover:text-sky-400 transition-colors">Services</a></li>
+                    <li><a href="#testimonials" class="hover:text-sky-400 transition-colors">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a></li>
                 </ul>
             </div>
 

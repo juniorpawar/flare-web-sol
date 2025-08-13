@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flare-about</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body class="w-screen min-h-screen bg-[#090128]">
+    <!-- Navbar Container -->
+    <nav class="absolute z-10 w-full p-3">
+        <div class="bg-white/10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-2 rounded-lg">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img class="h-14 md:h-20 w-14 md:w-20" src="./images/logo.png" alt="Your Brand Logo">
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="./about.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="./services.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="./contact.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <div class="flex md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="/" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                </span>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./services.html"
+                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                </span>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./about.html"
+                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                </span>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./contact.html"
+                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero text -->
+    <section class="min-h-screen flex flex-col items-center justify-center">
+        <div class="md:mb-[20%] text-center z-10 ">
+            <h1 class="font-bungee text-2xl sharp-shadow-head sm:text-3xl lg:text-4xl md:text-5xl font-bold">We design
+                the future of web 🚀</h1>
+            <h2 class="text-2xl text-gray-600 mt-3 font-bold mb-4">Read More About Us</h2>
+            <a href="#about"
+                class="inline-block bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-purple-700 transition duration-300 ease-in-out">Learn
+                More</a>
+            <a href="/portfolio"
+                class="ml-4 inline-block bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out">Get
+                Portfolio</a>
+        </div>
+        <div id="about-head" class="absolute z-0 h-full w-full"></div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="text-white py-16 px-10 md:px-20">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
+
+            <!-- Image -->
+            <div class="flex-1">
+                <img src="./images/about-img.png" alt="Our Team" class="">
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+                <h2 class="text-3xl md:text-4xl font-bold font-bungee sharp-shadow-sub-head text-[#0bbfd6] mb-6">&lt;
+                    ABOUT US /&gt;</h2>
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                    At <span class="text-yellow-400 font-semibold">&lt; FLARE web solutions🔥/&gt;</span>, we create
+                    stunning, high-performance websites and applications that help businesses stand out
+                    in the digital world. Our mission is simple — blend creative design with cutting-edge
+                    technology to deliver exceptional results.
+                </p>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    From startups to established enterprises, our team works closely with clients to
+                    understand their goals and craft tailored solutions. We specialize in responsive
+                    design, fast loading speeds, and user-friendly experiences.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-yellow-400">50+</h3>
+                        <p class="text-gray-400">Projects Delivered</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-yellow-400">20+</h3>
+                        <p class="text-gray-400">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- process section -->
+    <section id="process" class="flex flex-col-reverse md:flex-row justify-center items-start px-5 md:px-20 gap-20">
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>Step 1: Discovery & Strategy 💡</h3>
+                    <p>This is where we get to know you and your project. We'll have a detailed consultation to
+                        understand your business goals, target audience, and project requirements. We'll then create a
+                        strategic roadmap and a project blueprint that outlines the scope, timeline, and key milestones.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-step">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>Step 2: Design & Prototyping 🎨</h3>
+                    <p>Our design team transforms the roadmap into a visual reality. We'll create wireframes and
+                        high-fidelity designs that define the user experience and user interface. Before any code is
+                        written, you'll receive an interactive prototype to test and provide feedback, ensuring the
+                        design is exactly what you envisioned.</p>
+                </div>
+            </div>
+
+            <div class="timeline-step">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>Step 3: Development & Engineering 👨‍💻</h3>
+                    <p>With a finalized design in hand, our developers get to work. We build the project using clean,
+                        scalable code and modern technologies. You'll have regular updates and access to a staging
+                        environment where you can see the progress of your project in real-time.</p>
+                </div>
+            </div>
+
+            <div class="timeline-step">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>Step 4: Deployment & Launch 🚀</h3>
+                    <p>Once testing is complete and the project is approved by you, we prepare for launch. We handle the
+                        final setup and deployment, ensuring a smooth and secure transition from our servers to the live
+                        environment with minimal downtime.</p>
+                </div>
+            </div>
+
+            <div class="timeline-step">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>Step 5: Post-Launch Support & Growth 📈</h3>
+                    <p>Our partnership doesn't end at launch. We provide ongoing maintenance, technical support, and
+                        monitoring to ensure your project remains secure and up-to-date. We can also work with you on
+                        future enhancements and new feature development to help you continue to grow.</p>
+                </div>
+            </div>
+        </div>
+        <section class="container flex gap-4 flex-col mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white font-bungee sm:text-5xl">
+                Our Collaborative Process
+            </h2>
+            <p class="mt-4 text-xl text-yellow-400">
+                From a spark of an idea to a polished final product, we guide you every step of the way.
+            </p>
+            <h2 class="text-white">Kickstart your digital journey today !</h2>
+            <a href="./services.html">
+                <button class="text-lg text-white font-semibold bg-[#0A0149] w-fit px-2 py-1 rounded-lg">Explore
+                    Services >
+                </button>
+            </a>
+        </section>
+    </section>
+
+    <!-- scripts -->
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>

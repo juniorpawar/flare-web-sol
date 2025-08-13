@@ -1,0 +1,43 @@
+#about-head {
+    background-image: url("../images/about-head.jpg");
+    background-size: cover;
+    opacity: 30%;
+}
+
+/* process start */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding-left: 30px;
+  border-left: 2px solid #00ffd5;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.dot {
+  position: absolute;
+  left: -40px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #00ffd5;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00ffd5;
+}
+
+.content h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  color: #00ffd5;
+}
+
+.content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+/* process end */
