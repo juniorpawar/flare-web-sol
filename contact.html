@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flare-about</title>
+    <title>flare-contact</title>
 
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/about.css">
@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 
-<body class="w-screen min-h-screen bg-[#090128]">
+<body>
     <!-- Navbar Container -->
-    <nav class="absolute z-10 w-full p-3">
+    <nav class="absolute inset-0 z-10 w-full h-fit p-3">
         <div class="bg-white/10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-2 rounded-lg">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
@@ -78,132 +78,82 @@
         </div>
     </nav>
 
-    <!-- hero text -->
-    <section class="min-h-screen flex flex-col items-center justify-center">
-        <div class="md:mb-[20%] text-center z-10 ">
-            <h1 class="font-bungee text-2xl sharp-shadow-head sm:text-3xl lg:text-4xl md:text-5xl font-bold">We design
-                the future of web 🚀</h1>
-            <h2 class="text-2xl text-gray-600 mt-3 font-bold mb-4">Read More About Us</h2>
-            <a href="#about"
-                class="inline-block bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-purple-700 transition duration-300 ease-in-out">Learn
-                More</a>
-            <a href="/portfolio"
-                class="ml-4 inline-block bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out">Get
-                Portfolio</a>
-        </div>
-        <div id="about-head" class="absolute z-0 h-full w-full"></div>
-    </section>
-
-    <!-- about section -->
-    <section id="about" class="text-white py-16 px-10 md:px-20">
-        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
-
-            <!-- Image -->
-            <div class="flex-1">
-                <img src="./images/about-img.png" alt="Our Team" class="">
-            </div>
-
-            <!-- Content -->
-            <div class="flex-1">
-                <h2 class="text-3xl md:text-4xl font-bold font-bungee sharp-shadow-sub-head text-[#0bbfd6] mb-6">&lt;
-                    ABOUT US /&gt;</h2>
-                <p class="text-gray-300 mb-6 leading-relaxed">
-                    At <span class="text-yellow-400 font-semibold">&lt; FLARE web solutions🔥/&gt;</span>, we create
-                    stunning, high-performance websites and applications that help businesses stand out
-                    in the digital world. Our mission is simple — blend creative design with cutting-edge
-                    technology to deliver exceptional results.
-                </p>
-                <p class="text-gray-300 mb-8 leading-relaxed">
-                    From startups to established enterprises, our team works closely with clients to
-                    understand their goals and craft tailored solutions. We specialize in responsive
-                    design, fast loading speeds, and user-friendly experiences.
-                </p>
-
-                <!-- Stats -->
-                <div class="grid grid-cols-2 gap-6">
-                    <div>
-                        <h3 class="text-3xl font-bold text-yellow-400">50+</h3>
-                        <p class="text-gray-400">Projects Delivered</p>
+    <form action="" method="" class="mt-20">
+        <section class="py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 grid-cols-1">
+                    <div class="lg:mb-0 mb-10">
+                        <div class="group w-full h-full">
+                            <div class="relative h-full">
+                                <img src="./images/contact-form.jpg" alt="ContactUs tailwind section"
+                                    class="h-full w-full lg:rounded-l-2xl rounded-l-2xl bg-blend-multiply bg-indigo-700" />
+                                <h1
+                                    class="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">
+                                    Contact us</h1>
+                                <div class="absolute bottom-0 w-full lg:p-11 p-5">
+                                    <div class="bg-white rounded-lg p-6 block">
+                                        <a href="javascript:;" class="flex items-center mb-6">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z"
+                                                    stroke="#4F46E5" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <h5 class="text-black text-base font-normal leading-6 ml-5">+91-6232071729 | +91-7489030024
+                                            </h5>
+                                        </a>
+                                        <a href="https://veilmail.io/irish-geoff" class="flex items-center mb-6">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z"
+                                                    stroke="#4F46E5" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h5 class="text-black text-base font-normal leading-6 ml-5">
+                                                sengar.aditya07@gmail.com</h5>
+                                        </a>
+                                        <a href="javascript:;" class="flex items-center">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M25 12.9169C25 17.716 21.1939 21.5832 18.2779 24.9828C16.8385 26.6609 16.1188 27.5 15 27.5C13.8812 27.5 13.1615 26.6609 11.7221 24.9828C8.80612 21.5832 5 17.716 5 12.9169C5 10.1542 6.05357 7.5046 7.92893 5.55105C9.8043 3.59749 12.3478 2.5 15 2.5C17.6522 2.5 20.1957 3.59749 22.0711 5.55105C23.9464 7.5046 25 10.1542 25 12.9169Z"
+                                                    stroke="#4F46E5" stroke-width="2" />
+                                                <path
+                                                    d="M17.5 11.6148C17.5 13.0531 16.3807 14.219 15 14.219C13.6193 14.219 12.5 13.0531 12.5 11.6148C12.5 10.1765 13.6193 9.01058 15 9.01058C16.3807 9.01058 17.5 10.1765 17.5 11.6148Z"
+                                                    stroke="#4F46E5" stroke-width="2" />
+                                            </svg>
+                                            <h5 class="text-black text-base font-normal leading-6 ml-5">82 Natural Green Park Colony, Ujjain Road,Dewas MP 455001</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-3xl font-bold text-yellow-400">20+</h3>
-                        <p class="text-gray-400">Happy Clients</p>
+
+                    <div class="bg-[#0A0145] p-5 lg:p-11 lg:rounded-r-2xl rounded-r-2xl">
+                        <h2 class="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">Send Us Message
+                        </h2>
+                        <input type="text"
+                            class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10"
+                            placeholder="Name">
+                        <input type="text"
+                            class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10"
+                            placeholder="Email">
+                        <input type="text"
+                            class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10"
+                            placeholder="Phone">
+                        <div class="mb-10">
+                        </div>
+                        <input type="text"
+                            class="w-full h-24 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10"
+                            placeholder="Message">
+                        <button class="w-fit px-8 py-2 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-indigo-600 shadow-sm">Send</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- process section -->
-    <section id="process" class="flex flex-col-reverse md:flex-row justify-center items-start px-5 md:px-20 gap-20">
-        <div class="timeline">
-            <div class="timeline-step">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Step 1: Discovery & Strategy 💡</h3>
-                    <p>This is where we get to know you and your project. We'll have a detailed consultation to
-                        understand your business goals, target audience, and project requirements. We'll then create a
-                        strategic roadmap and a project blueprint that outlines the scope, timeline, and key milestones.
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Step 2: Design & Prototyping 🎨</h3>
-                    <p>Our design team transforms the roadmap into a visual reality. We'll create wireframes and
-                        high-fidelity designs that define the user experience and user interface. Before any code is
-                        written, you'll receive an interactive prototype to test and provide feedback, ensuring the
-                        design is exactly what you envisioned.</p>
-                </div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Step 3: Development & Engineering 👨‍💻</h3>
-                    <p>With a finalized design in hand, our developers get to work. We build the project using clean,
-                        scalable code and modern technologies. You'll have regular updates and access to a staging
-                        environment where you can see the progress of your project in real-time.</p>
-                </div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Step 4: Deployment & Launch 🚀</h3>
-                    <p>Once testing is complete and the project is approved by you, we prepare for launch. We handle the
-                        final setup and deployment, ensuring a smooth and secure transition from our servers to the live
-                        environment with minimal downtime.</p>
-                </div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Step 5: Post-Launch Support & Growth 📈</h3>
-                    <p>Our partnership doesn't end at launch. We provide ongoing maintenance, technical support, and
-                        monitoring to ensure your project remains secure and up-to-date. We can also work with you on
-                        future enhancements and new feature development to help you continue to grow.</p>
-                </div>
-            </div>
-        </div>
-        <section class="container flex gap-4 flex-col mx-auto px-4">
-            <h2 class="text-4xl font-bold text-white font-bungee sm:text-5xl">
-                Our Collaborative Process
-            </h2>
-            <p class="mt-4 text-xl text-yellow-400">
-                From a spark of an idea to a polished final product, we guide you every step of the way.
-            </p>
-            <h2 class="text-white">Kickstart your digital journey today !</h2>
-            <a href="./services.html">
-                <button class="text-lg text-white font-semibold bg-[#0A0149] w-fit px-2 py-1 rounded-lg">Explore
-                    Services >
-                </button>
-            </a>
         </section>
-    </section>
+    </form>
 
     <!-- footer -->
     <footer class="bg-gray-900 text-gray-400 py-5 px-4 md:px-8">
@@ -290,6 +240,7 @@
 
     <!-- scripts -->
     <script src="./js/nav.js"></script>
+
 </body>
 
 </html>

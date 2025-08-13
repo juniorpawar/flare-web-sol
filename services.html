@@ -1,11 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flare-services</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <!-- Navbar Container -->
+    <nav class="absolute z-10 w-full p-3">
+        <div class="bg-white/10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-2 rounded-lg">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img class="h-14 md:h-20 w-14 md:w-20" src="./images/logo.png" alt="Your Brand Logo">
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="./about.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="./services.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="./contact.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="/" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                </span>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./services.html"
+                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                </span>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./about.html"
+                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                </span>
+                <span class="hover:bg-gray-700 rounded-lg block">
+                    <a href="./contact.html"
+                        class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- services -->
+    <section class="py-32 flex flex-col gap-5 w-screen min-h-screen items-center justify-center">
+        <div class="bg-black flex flex-col items-center justify-center rounded-lg">
+            <div class="flex items-center w-full px-10">
+                <img src="./images/services.jpg" alt="" class="block h-48">
+                <h2 class="text-white text-4xl font-bungee">Web Development Services</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-5 max-w-7xl p-3 rounded-b-lg">
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        E-Commerce Development
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Sell Smarter, Scale Faster"</span>
+                        We create high-performance E-commerce platforms that deliver seamless shopping experiences
+                        across devices. Our solutions blend stunning design, optimized performance, and secure payment
+                        processing to maximize your online sales.
+                        From small startups to enterprise-level online stores, we develop platforms using Shopify,
+                        WooCommerce, Magento, or custom-built solutions that grow with your business.<span
+                            class="font-semibold">Shopify, WooCommerce, Magento, or custom-built solutions</span>, our
+                        that grow with your business.
+                    </p>
+                    <h3 class="text-lg font-semibold text-[#0bbfd6] mb-3">Key Highlights:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Fully responsive, mobile-first designs</li>
+                        <li>Fast & secure checkout</li>
+                        <li>Multi-currency & multi-language support</li>
+                        <li>Integration with top payment gateways</li>
+                        <li>AI-powered product recommendations</li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        CMS (Content Management System Development)
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Empowering You to Manage Your Content with Ease"</span>
+                        We specialize in building robust, scalable, and user-friendly Content Management Systems (CMS)
+                        that put you in control of your website. Whether you need a custom-built CMS or integration with
+                        leading platforms like <span class="font-semibold">WordPress, Drupal, or Strapi</span>, our
+                        solutions are
+                        tailored to your business needs. From dynamic content updates to multi-user permissions,
+                        our CMS solutions ensure that managing your site is fast, secure, and hassle-free — no coding
+                        skills required.
+                    </p>
+                    <h3 class="text-lg font-semibold text-[#0bbfd6] mb-3">Key Highlights:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Custom CMS tailored to your workflow</li>
+                        <li>SEO-friendly architecture</li>
+                        <li>Multi-language support</li>
+                        <li>Advanced user roles and permissions</li>
+                        <li>Secure and scalable</li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Website Development
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Transforming Ideas into Digital Experiences"</span>
+                        We craft modern, responsive, and scalable web applications that deliver exceptional user
+                        experiences. Whether you need a corporate website, a dynamic web app, or an interactive landing
+                        page, our <span class="font-semibold">full-stack development expertise</span> ensures your
+                        project is built with precision and
+                        performance in mind.
+                        Using cutting-edge technologies like React, Next.js, Node.js, and Laravel, we bring your vision
+                        to life with seamless functionality and futuristic designs.
+                    </p>
+                    <h3 class="text-lg font-semibold text-[#0bbfd6] mb-3">Key Highlights:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Custom web application development</li>
+                        <li>Responsive & mobile-friendly interfaces</li>
+                        <li>API development & integrations</li>
+                        <li>SEO optimization & fast loading times</li>
+                        <li>Built with the latest frameworks & tools</li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Web Maintenance & Support
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Keeping Your Website Running Smoothly — 24/7"</span>
+                        A website isn’t just a one-time project — it’s a living asset that needs constant care. We
+                        provide ongoing web maintenance and support to keep your site secure, updated, and optimized.
+                        Our team ensures zero downtime, fast performance, and regular backups, so you can focus on your
+                        business while we handle the tech
+                    </p>
+                    <h3 class="text-lg font-semibold text-[#0bbfd6] mb-3">Key Highlights:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Regular security updates & patches</li>
+                        <li>Performance monitoring & speed optimization</li>
+                        <li>Content updates & design tweaks</li>
+                        <li>24/7 technical support</li>
+                        <li>Backup & disaster recovery solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black flex flex-col items-center justify-center rounded-lg">
+            <div class="flex items-center w-full px-10">
+                <img src="./images/services.jpg" alt="" class="block h-48">
+                <h2 class="text-white text-4xl font-bungee">Graphics Design Services</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-5 max-w-7xl p-3 rounded-b-lg">
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Logo Design
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Your Brand’s Signature in a Single Mark"</span>
+                        We craft distinctive, memorable, and versatile logos that capture your brand’s personality and
+                        values. From concept sketches to the final vector-ready format, our designs are built for both
+                        digital and print use, ensuring your brand identity remains strong across all platforms.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Brand Identity Design
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Consistency That Builds Trust"</span>
+                        We develop complete brand identity systems that go beyond just a logo. From typography and color
+                        palettes to tone of voice and visual guidelines, we ensure your brand speaks the same language
+                        across every channel, fostering recognition and loyalty.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Print Design
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Bringing Ideas to Life, On Paper"</span>
+                        Our print designs combine striking visuals with strategic layouts to engage your audience and
+                        convey your message effectively. Whether it’s brochures, flyers, or posters, we balance
+                        creativity with readability for maximum impact.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Infographics
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Turning Complex Data into Visual Stories"</span>
+                        We create visually compelling infographics that simplify complex data and make it engaging,
+                        shareable, and easy to understand. Perfect for presentations, reports, social media, and
+                        websites.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Digital Graphics
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Pixel-Perfect Visuals for Every Screen"</span>
+                        From social media banners to website hero images, we design modern, responsive, and
+                        brand-consistent digital graphics that make your online presence visually irresistible.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Presentation Design
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Present with Confidence and Style"</span>
+                        We create engaging, on-brand presentation decks that impress stakeholders and captivate
+                        audiences. Every slide is thoughtfully designed to maintain visual consistency and highlight key
+                        messages.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Advertising & Marketing Materials
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Advertising & Marketing Materials"</span>
+                        We design persuasive and visually appealing marketing materials that align with your campaigns
+                        and drive measurable results — from online ads to physical promotional items.
+                    </p>
+                </div>
+                <div
+                    class="bg-[#0A0145] rounded-xl p-8 shadow-lg hover:shadow-[#0bbfd6]/40 transition transform hover:-translate-y-2">
+                    <h2 class="text-2xl font-bold text-[#0bbfd6] mb-4">
+                        Packaging Design
+                    </h2>
+                    <p class="text-gray-300 mb-6">
+                        <span class="italic text-[#7843e6]">"Packaging That Demands a Second Look"</span>
+                        We design product packaging that not only protects your goods but also elevates your brand
+                        presence on the shelf. Our designs are tailored to resonate with your target audience and stand
+                        out in competitive markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-400 py-5 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+            <div>
+                <img src="./images/logo.png" alt="" class="h-24 ">
+                <h2 class="text-lg">Crafting your digital dreams</h2>
+                <p class="text-sm">
+                    Providing innovative solutions and exceptional service for businesses of all sizes.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-sky-400 transition-colors">Home</a></li>
+                    <li><a href="./#about" class="hover:text-sky-400 transition-colors">About Us</a></li>
+                    <li><a href="./#services" class="hover:text-sky-400 transition-colors">Services</a></li>
+                    <li><a href="./#testimonials" class="hover:text-sky-400 transition-colors">Testimonials</a></li>
+                    <li><a href="./#contact" class="hover:text-sky-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Contact</h4>
+                <address class="space-y-2 not-italic">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-sky-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                            <path d="M15 11h-2V7h-2v4H9v2h2v4h2v-4h2z" />
+                        </svg>
+                        <span>+91-6232071729 <br> +91-7489030024</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-sky-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <span>sengar.aditya07@gmail.com</span>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="h-5 w-5 text-sky-400 mr-3 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2c-4.41 0-8 3.59-8 8 0 4.41 8 14 8 14s8-9.59 8-14c0-4.41-3.59-8-8-8zm0 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>82 Natural Green Park Colony, Ujjain Road,Dewas MP 455001</span>
+                    </div>
+                </address>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-sky-400 transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.633 7.994a8.6 8.6 0 0 1-2.457 1.341 4.3 4.3 0 0 0 1.89-2.378 8.618 8.618 0 0 1-2.73 1.053A4.293 4.293 0 0 0 12.012 8c-2.36 0-4.27 1.91-4.27 4.27s1.91 4.27 4.27 4.27c1.378 0 2.59-6.49 3.513-3.79 0 .285.02.568.02.853 0 3.1-2.365 7.42-7.42 7.42-1.46 0-2.82-.42-3.98-1.14.28.035.568.05.86.05 1.688 0 3.24-.57 4.47-1.59-1.57.02-2.9-1.07-3.34-2.49.22.04.45.06.68.06.33 0 .66-.04.97-.13-1.63-.33-2.9-1.76-2.9-3.48v-.04c.48.27.97.42 1.5.44A4.273 4.273 0 0 1 7.2 8.35c0-.94.25-1.8.69-2.54 1.83 2.25 4.54 3.74 7.53 3.9-.06-.27-.1-.55-.1-.85 0-2.07 1.68-3.75 3.75-3.75 1.08 0 2.05.45 2.73 1.18.86-.17 1.68-.49 2.42-.92-.29.89-.92 1.64-1.74 2.12.78-.09 1.54-.3 2.24-.61-.06.84-.66 1.54-1.35 2.11z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-sky-400 transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.871v-6.985h-2.536V12h2.536V9.431c0-2.503 1.493-3.89 3.776-3.89 1.094 0 2.24.195 2.24.195v2.454H15.83c-1.205 0-1.563.75-1.563 1.503V12h2.771l-.443 2.726h-2.328v6.985C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-sky-400 transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-7 18.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zm6.5-11.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-gray-700 my-3">
+        <div class="text-center text-sm">
+            &copy; 2025 Flare Web Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- navbar toggle -->
+    <script src="./js/nav.js"></script>
+
 </body>
+
 </html>
