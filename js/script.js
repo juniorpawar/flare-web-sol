@@ -109,10 +109,10 @@ function resetModel() {
     controls.reset();
 }
 
-canvas.addEventListener("touchend", () => {
-    window.
-    setTimeout(resetModel, 10000)
-})
+// canvas.addEventListener("touchend", () => {
+//     window.
+//     setTimeout(resetModel, 10000)
+// })
 
 
 // Start the animation loop when the window loads.

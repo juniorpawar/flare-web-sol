@@ -39,7 +39,7 @@ body {
 canvas {
     position: relative;
     top: 200px;
-    z-index: 9;
+    z-index: 0;
 }
 
 .font-archivo {
