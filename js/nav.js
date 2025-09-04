@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initially hide the mobile menu
     mobileMenu.style.display = 'none';
+    mobileMenu.style.backgroundColor = '#000b39c1'
+
 
     mobileMenuButton.addEventListener('click', () => {
         const isMenuOpen = mobileMenu.style.display === 'block';

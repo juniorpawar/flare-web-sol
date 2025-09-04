@@ -19,7 +19,7 @@ body {
     background-image: url("../images/stars.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 @media screen and (max-width: 768px) {
@@ -41,6 +41,20 @@ canvas {
     top: 200px;
     z-index: 0;
 }
+
+#scene-container canvas {
+  position: relative; /* make z-index work */
+  z-index: 0;         /* visible & interactive */
+}
+
+/* Tablets and smaller (≤ 1024px) */
+@media (max-width: 1024px) {
+  #scene-container canvas {
+    z-index: -1;        /* push canvas behind, disables interaction */
+    pointer-events: none; /* ensure touches go to page, not canvas */
+  }
+}
+
 
 .font-archivo {
     font-family: 'Archivo Black', sans-serif;
